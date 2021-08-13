@@ -2,10 +2,10 @@ build:
 	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o digestproxy main.go
 
 docker:
-	docker build -t shbekti/digestproxy:latest .
+	docker build -t sbekti/digestproxy:latest .
 
 push:
-	docker push shbekti/digestproxy:latest
+	docker push sbekti/digestproxy:latest
 
 run:
 	go run main.go
